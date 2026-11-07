@@ -9,6 +9,12 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('motion');
+    }
+  </script>
+  <script src="assets/js/main.js" defer></script>
   <meta property="og:title" content="Allingford Drone Services">
   <meta property="og:description" content="Drone consultancy, piloting, data processing and aerial media. Based in Grimsby, working nationwide.">
   <meta property="og:image" content="https://allingforddroneservices.co.uk/assets/img/hero-mobile.jpg">
@@ -43,7 +49,7 @@
   </nav>
 
   <main id="main">
-    <section class="section" id="about" aria-labelledby="about-title">
+    <section class="section section--ash" id="about" aria-labelledby="about-title">
       <div class="wrap">
         <h2 class="pill-heading" id="about-title">About</h2>
         <div class="about">
@@ -62,11 +68,11 @@
       </div>
     </section>
 
-    <section class="section" id="services" aria-labelledby="services-title">
+    <section class="section services-section" id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <h2 class="pill-heading" id="services-title">Services</h2>
+        <h2 class="pill-heading reveal" style="--i:0" id="services-title">Services</h2>
         <div class="services">
-          <article class="service">
+          <article class="service reveal" style="--i:1">
             <img class="service-photo" src="assets/img/consultancy.jpg" width="900" height="440" alt="A crop spraying drone over a field" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/consultancy.png" alt=""></div>
@@ -82,7 +88,7 @@
             </div>
           </article>
 
-          <article class="service">
+          <article class="service reveal" style="--i:2">
             <img class="service-photo" src="assets/img/piloting.jpg" width="900" height="600" alt="An enterprise drone with a survey sensor on grass" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/piloting.png" alt=""></div>
@@ -97,7 +103,7 @@
             </div>
           </article>
 
-          <article class="service">
+          <article class="service reveal" style="--i:3">
             <img class="service-photo" src="assets/img/processing.jpg" width="900" height="506" alt="Top down view of a drone over water and woodland" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/processing.png" alt=""></div>
@@ -112,7 +118,7 @@
             </div>
           </article>
 
-          <article class="service">
+          <article class="service reveal" style="--i:4">
             <img class="service-photo" src="assets/img/media.jpg" width="900" height="601" alt="A hand launching a small drone at sunset" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/media.png" alt=""></div>
@@ -129,7 +135,7 @@
       </div>
     </section>
 
-    <section class="section enquire" id="enquire" aria-labelledby="enquire-title">
+    <section class="section section--ash enquire" id="enquire" aria-labelledby="enquire-title">
       <div class="wrap">
         <h2 class="pill-heading" id="enquire-title">Enquire</h2>
         <p>Tell me about your project. The enquiry form takes about five minutes and lets you choose the services you need. I'll reply with the next steps.</p>
