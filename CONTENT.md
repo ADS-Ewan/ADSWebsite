@@ -36,10 +36,16 @@ Drone consultancy, piloting and data processing for organisations across the UK.
 **Button:**
 Start an enquiry
 
-**Navigation links:**
+**Navigation buttons:**
 - About
 - Services
 - Enquire
+
+**Services dropdown** (desktop only, appears when hovering over Services):
+- Consultancy
+- Piloting
+- Post Processing
+- Media & Marketing
 
 ---
 
@@ -74,6 +80,9 @@ Allingford Drone Services is how I offer that experience directly: helping you s
 
 **Heading:**
 Services
+
+**Link line at the bottom of every card:**
+Find out more
 
 ### Card 1
 
@@ -165,6 +174,110 @@ Tell me about your project. The enquiry form takes about five minutes and lets y
 - Based in Grimsby, working nationwide
 - Privacy notice (link)
 - Allingford Drone Services is a trading name of Ewan Allen-Cottingham
+
+---
+
+## Service pages
+
+Each page currently reuses its card's text as a placeholder. The logo band, tagline, navigation, Enquire section and footer are shared with the home page, so edit those in the sections above.
+
+The **hero photo** on each page is the same photo as its card, and uses the same photo description.
+
+### Consultancy page
+Web address: allingforddroneservices.co.uk/services/consultancy/
+
+**Browser tab title:**
+Consultancy | Allingford Drone Services
+
+**Search result description:**
+Setting up or improving your own drone operation. Allingford Drone Services, based in Grimsby, working nationwide.
+
+**Heading:**
+Consultancy
+
+**Intro:**
+Setting up or improving your own drone operation.
+
+**Bullets:**
+- Operations manuals
+- CAA compliance and authorisations
+- Maintenance schedules
+- SORA risk assessments
+- Advice for agronomists adopting drones
+
+**Further content:**
+> Note: add paragraphs, examples or anything else for this page here.
+
+### Piloting page
+Web address: allingforddroneservices.co.uk/services/piloting/
+
+**Browser tab title:**
+Piloting | Allingford Drone Services
+
+**Search result description:**
+An experienced remote pilot for your projects or your crew. Allingford Drone Services, based in Grimsby, working nationwide.
+
+**Heading:**
+Piloting
+
+**Intro:**
+An experienced remote pilot for your projects or your crew.
+
+**Bullets:**
+- Survey and inspection flights
+- Multirotor and fixed wing
+- Short notice cover
+- UK and international deployments
+
+**Further content:**
+> Note: add paragraphs, examples or anything else for this page here.
+
+### Post Processing page
+Web address: allingforddroneservices.co.uk/services/post-processing/
+
+**Browser tab title:**
+Post Processing | Allingford Drone Services
+
+**Search result description:**
+Drone data turned into outputs you can work with. Allingford Drone Services, based in Grimsby, working nationwide.
+
+**Heading:**
+Post Processing
+
+**Intro:**
+Drone data turned into outputs you can work with.
+
+**Bullets:**
+- Orthomosaics and elevation models
+- LiDAR point clouds
+- 3D models
+- Multispectral and GIS analysis
+
+**Further content:**
+> Note: add paragraphs, examples or anything else for this page here.
+
+### Media & Marketing page
+Web address: allingforddroneservices.co.uk/services/media-marketing/
+
+**Browser tab title:**
+Media & Marketing | Allingford Drone Services
+
+**Search result description:**
+Imagery for your marketing, and help putting it to use. Allingford Drone Services, based in Grimsby, working nationwide.
+
+**Heading:**
+Media & Marketing
+
+**Intro:**
+Imagery for your marketing, and help putting it to use.
+
+**Bullets:**
+- Aerial photography and video
+- Ground footage
+- Social media management
+
+**Further content:**
+> Note: add paragraphs, examples or anything else for this page here.
 
 ---
 
