@@ -9,6 +9,12 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('motion');
+    }
+  </script>
+  <script src="assets/js/main.js" defer></script>
   <meta property="og:title" content="Allingford Drone Services">
   <meta property="og:description" content="Drone consultancy, piloting, data processing and aerial media. Based in Grimsby, working nationwide.">
   <meta property="og:image" content="https://allingforddroneservices.co.uk/assets/img/hero-mobile.jpg">
@@ -17,7 +23,7 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header>
+  <header class="site-header">
     <div class="hero">
       <picture>
         <source media="(max-width: 760px)" srcset="assets/img/hero-mobile.jpg">
@@ -29,48 +35,65 @@
       <div class="wrap">
         <h1><img class="logo" src="assets/img/logo.jpg" width="1400" height="248" alt="Allingford Drone Services"></h1>
         <p class="tagline">Drone consultancy, piloting and data processing for organisations across the UK.</p>
-        <a class="button" href="https://script.google.com/macros/s/AKfycbxY3ZxUKLFfmMnF3indC72LQ9qUxQWBb0Nvjt_iEoLK3CEcggeoSCofU5RL72KIc8Ou/exec" target="_blank" rel="noopener">Start an enquiry</a>
+        <a class="scroll-cue" href="#offer" aria-label="Scroll to content">
+          <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </header>
 
   <nav class="site-nav" aria-label="Main">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#enquire">Enquire</a></li>
+    <a class="nav-home" href="./"><img src="assets/img/nav-mark.png" width="312" height="164" alt="Allingford Drone Services home page"></a>
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="about/">About</a></li>
+      <li class="nav-item nav-item--menu">
+        <a class="nav-link" href="#services" data-section="services">Services</a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="services/consultancy/">Consultancy</a></li>
+            <li><a href="services/piloting/">Piloting</a></li>
+            <li><a href="services/post-processing/">Post Processing</a></li>
+            <li><a href="services/media-marketing/">Media &amp; Marketing</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="contact/">Contact</a></li>
     </ul>
   </nav>
 
   <main id="main">
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap">
-        <h2 class="pill-heading" id="about-title">About</h2>
-        <div class="about">
-          <img class="headshot" src="assets/img/headshot.jpg" width="720" height="720" alt="Ewan Allen-Cottingham">
-          <div class="about-text">
-            <p>I'm Ewan Allen-Cottingham, a drone pilot and aerospace engineer with over five years in the UAV industry.</p>
-            <p>I started as a pilot and technician at Vantage UAV, then flew AR3 and AR5 fixed wing aircraft beyond visual line of sight for TEKEVER, where I became Remote Pilot in Command and Mission Commander, leading flight crews and training new operators. As Technical Manager at Survey Air I ran CAA compliance, the operations manual and fleet maintenance, and flew LiDAR, photogrammetry, multispectral and inspection work.</p>
-            <p>Allingford Drone Services is how I offer that experience directly: helping you set up and run a drone operation, flying for you, and turning the data into something you can use.</p>
-            <ul class="creds">
-              <li><strong>BEng (Hons)</strong>Aerospace Engineering, University of the West of England</li>
-              <li><strong>100+ BVLOS hours</strong>Fixed wing operations with TEKEVER</li>
-              <li><strong>GVC and A2 CofC</strong>UK remote pilot certificates</li>
-            </ul>
-          </div>
+    <section class="section section--white" id="offer" aria-labelledby="offer-title" data-animate>
+      <div class="wrap offer">
+        <h2 class="offer-title reveal" style="--i:0" id="offer-title">What I Offer</h2>
+        <div class="offer-text reveal" style="--i:1">
+          <p>Allingford Drone Services gives organisations across the UK direct access to an experienced remote pilot and aerospace engineer. I help you set up and run a compliant drone operation, fly survey, inspection and media work for you, and process the data into outputs your team can use.</p>
+          <a class="button button--slate" href="about/">More about me</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services" aria-labelledby="services-title">
+    <section class="section section--ash network-section" id="network" aria-labelledby="network-title" data-animate>
       <div class="wrap">
-        <h2 class="pill-heading" id="services-title">Services</h2>
+        <h2 class="pill-heading reveal" style="--i:0" id="network-title">My Network</h2>
+        <ul class="network reveal" style="--i:1">
+          <li><a href="https://vantage-uav.co.uk" target="_blank" rel="noopener"><img src="assets/img/logos/vantage-uav.svg" width="2060" height="380" alt="Vantage UAV"></a></li>
+          <li><a href="https://tekever.com" target="_blank" rel="noopener"><img src="assets/img/logos/tekever.png" width="1149" height="162" alt="TEKEVER"></a></li>
+          <li><a href="https://surveyair.co.uk" target="_blank" rel="noopener"><img src="assets/img/logos/survey-air.svg" width="553" height="169" alt="Survey Air"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services" aria-labelledby="services-title" data-animate>
+      <div class="wrap">
+        <h2 class="pill-heading reveal" style="--i:0" id="services-title">Services</h2>
+      </div>
+      <div class="wrap wrap--wide">
         <div class="services">
-          <article class="service">
+          <article class="service reveal" style="--i:1">
             <img class="service-photo" src="assets/img/consultancy.jpg" width="900" height="440" alt="A crop spraying drone over a field" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/consultancy.png" alt=""></div>
-              <h3>Consultancy</h3>
+              <h3><a href="services/consultancy/">Consultancy</a></h3>
               <p>Setting up or improving your own drone operation.</p>
               <ul>
                 <li>Operations manuals</li>
@@ -79,14 +102,15 @@
                 <li>SORA risk assessments</li>
                 <li>Advice for agronomists adopting drones</li>
               </ul>
+              <p class="service-more" aria-hidden="true">Find out more</p>
             </div>
           </article>
 
-          <article class="service">
+          <article class="service reveal" style="--i:2">
             <img class="service-photo" src="assets/img/piloting.jpg" width="900" height="600" alt="An enterprise drone with a survey sensor on grass" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/piloting.png" alt=""></div>
-              <h3>Piloting</h3>
+              <h3><a href="services/piloting/">Piloting</a></h3>
               <p>An experienced remote pilot for your projects or your crew.</p>
               <ul>
                 <li>Survey and inspection flights</li>
@@ -94,14 +118,15 @@
                 <li>Short notice cover</li>
                 <li>UK and international deployments</li>
               </ul>
+              <p class="service-more" aria-hidden="true">Find out more</p>
             </div>
           </article>
 
-          <article class="service">
-            <img class="service-photo" src="assets/img/processing.jpg" width="900" height="506" alt="Top down view of a drone over water and woodland" loading="lazy">
+          <article class="service reveal" style="--i:3">
+            <img class="service-photo" src="assets/img/processing.jpg" width="900" height="492" alt="DTM of mountain landscape" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/processing.png" alt=""></div>
-              <h3>Post Processing</h3>
+              <h3><a href="services/post-processing/">Post Processing</a></h3>
               <p>Drone data turned into outputs you can work with.</p>
               <ul>
                 <li>Orthomosaics and elevation models</li>
@@ -109,32 +134,34 @@
                 <li>3D models</li>
                 <li>Multispectral and GIS analysis</li>
               </ul>
+              <p class="service-more" aria-hidden="true">Find out more</p>
             </div>
           </article>
 
-          <article class="service">
+          <article class="service reveal" style="--i:4">
             <img class="service-photo" src="assets/img/media.jpg" width="900" height="601" alt="A hand launching a small drone at sunset" loading="lazy">
             <div class="service-body">
               <div class="service-icon"><img src="assets/icons/media.png" alt=""></div>
-              <h3>Media &amp; Marketing</h3>
+              <h3><a href="services/media-marketing/">Media &amp; Marketing</a></h3>
               <p>Imagery for your marketing, and help putting it to use.</p>
               <ul>
                 <li>Aerial photography and video</li>
                 <li>Ground footage</li>
                 <li>Social media management</li>
               </ul>
+              <p class="service-more" aria-hidden="true">Find out more</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section enquire" id="enquire" aria-labelledby="enquire-title">
+    <section class="section section--ash enquire" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
-        <h2 class="pill-heading" id="enquire-title">Enquire</h2>
-        <p>Tell me about your project. The enquiry form takes about five minutes and lets you choose the services you need. I'll reply with the next steps.</p>
+        <h2 class="pill-heading" id="contact-title">Contact</h2>
+        <p>Have a project in mind or a question about what drones could do for you? Send me a message and I'll get back to you.</p>
         <div class="enquire-actions">
-          <a class="button" href="https://script.google.com/macros/s/AKfycbxY3ZxUKLFfmMnF3indC72LQ9qUxQWBb0Nvjt_iEoLK3CEcggeoSCofU5RL72KIc8Ou/exec" target="_blank" rel="noopener">Start an enquiry</a>
+          <a class="button" href="contact/">Contact me</a>
           <a class="button button--outline" href="mailto:ewan@allingforddroneservices.co.uk">Email me</a>
         </div>
       </div>

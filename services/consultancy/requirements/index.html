@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drone Requirements | Allingford Drone Services</title>
+  <meta name="description" content="Tell Allingford Drone Services about the drone work you want to carry out, and get a proposal with recommended next steps and costs.">
+  <link rel="icon" href="../../../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <link rel="preload" href="../../../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css">
+  <script src="../../../assets/js/main.js" defer></script>
+  <meta property="og:title" content="Drone Requirements | Allingford Drone Services">
+  <meta property="og:description" content="Tell Allingford Drone Services about the drone work you want to carry out, and get a proposal with recommended next steps and costs.">
+  <meta property="og:image" content="https://allingforddroneservices.co.uk/assets/img/hero-consultancy-mobile.jpg">
+  <meta property="og:url" content="https://allingforddroneservices.co.uk/services/consultancy/requirements/">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header site-header--short">
+    <div class="hero hero--service">
+      <picture>
+        <source media="(max-width: 760px)" srcset="../../../assets/img/hero-consultancy-mobile.jpg">
+        <img src="../../../assets/img/hero-consultancy.jpg" width="2400" height="1600" alt="A crop spraying drone over a field">
+      </picture>
+    </div>
+
+    <div class="brand-band">
+      <div class="wrap">
+        <a href="../../../"><img class="logo" src="../../../assets/img/logo.jpg" width="1400" height="248" alt="Allingford Drone Services home page"></a>
+        <p class="tagline">Drone consultancy, piloting and data processing for organisations across the UK.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main">
+    <a class="nav-home" href="../../../"><img src="../../../assets/img/nav-mark.png" width="312" height="164" alt="Allingford Drone Services home page"></a>
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="../../../about/">About</a></li>
+      <li class="nav-item nav-item--menu">
+        <a class="nav-link is-current" href="../../../#services" data-section="services">Services</a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../../../services/consultancy/">Consultancy</a></li>
+            <li><a href="../../../services/piloting/">Piloting</a></li>
+            <li><a href="../../../services/post-processing/">Post Processing</a></li>
+            <li><a href="../../../services/media-marketing/">Media &amp; Marketing</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="../../../contact/">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="section section--ash" aria-labelledby="page-title">
+      <div class="wrap">
+        <h1 class="pill-heading" id="page-title">Drone Requirements</h1>
+        <div class="form-page form-page--wide">
+          <div id="formWrap">
+            <p class="form-intro">Tell me about the drone work you want to carry out. I'll use your answers to prepare a proposal with recommended next steps and costs. It takes about five minutes.</p>
+            <form id="f" autocomplete="on" novalidate onsubmit="return false">
+            <!-- About you -->
+            <section class="form-card form-sec" data-title="About You">
+              <h2>About you</h2>
+              <div class="pair">
+                <div class="field" data-label="Company"><label for="company">Company <span class="req" aria-hidden="true">*</span></label><input type="text" id="company" autocomplete="organization"></div>
+                <div class="field" data-label="Sector"><label for="sector">Sector</label>
+                  <select id="sector"><option value=""></option><option>Construction</option><option>Utilities and Energy</option><option>Estates and Property</option><option>Infrastructure</option><option>Agriculture</option><option>Environmental and Conservation</option><option>Surveying</option><option>Media</option><option>Public Sector</option><option>Other</option></select></div>
+              </div>
+              <div class="pair">
+                <div class="field" data-label="Name"><label for="contact">Your name <span class="req" aria-hidden="true">*</span></label><input type="text" id="contact" autocomplete="name"></div>
+                <div class="field" data-label="Role"><label for="role">Role</label><input type="text" id="role" autocomplete="organization-title"></div>
+              </div>
+              <div class="pair">
+                <div class="field" data-label="Email"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="email" autocomplete="email"></div>
+                <div class="field" data-label="Telephone"><label for="telephone">Telephone</label><input type="tel" id="telephone" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="e.g. 01472 123456"></div>
+              </div>
+              <div class="pair">
+                <div class="field" data-label="Website"><label for="website">Website</label><input type="text" id="website" autocomplete="url"></div>
+                <div class="field" data-label="Company address"><label for="address">Company address</label><input type="text" id="address" autocomplete="street-address"></div>
+              </div>
+            </section>
+        
+            <!-- Mission types -->
+            <section class="form-card form-sec">
+              <h2>Mission types <span class="req" aria-hidden="true">*</span></h2>
+              <p class="hint hint--lead">Tick everything you want to carry out. A short set of questions appears for each one.</p>
+              <div class="opts types" id="types">
+                <label><input type="checkbox" value="Inspection"> Inspection</label>
+                <label><input type="checkbox" value="Media"> Media</label>
+                <label><input type="checkbox" value="Topography"> Topography</label>
+                <label><input type="checkbox" value="Multispectral"> Multispectral</label>
+                <label><input type="checkbox" value="3D Modelling"> 3D Modelling</label>
+              </div>
+                  </section>
+        
+            <!-- One section per mission type -->
+            <section class="form-card form-sec" hidden data-type="Inspection" data-title="Inspection">
+              <h3>Inspection</h3>
+              <div class="field" data-label="Assets to inspect"><div class="lbl">What will you inspect?</div>
+                <div class="opts"><label><input type="checkbox" value="Roofs"> Roofs</label><label><input type="checkbox" value="Facades"> Facades</label><label><input type="checkbox" value="Structures and bridges"> Structures and bridges</label><label><input type="checkbox" value="Utilities and energy assets"> Utilities and energy assets</label><label><input type="checkbox" value="Other"> Other</label></div>
+                <input type="text" placeholder="Other, or more detail" class="more"></div>
+              <div class="field" data-label="Typical asset size"><label>Typical asset size</label><input type="text" placeholder="e.g. 2,000 m² warehouse roof, 30 m telecom mast"></div>
+              <div class="field" data-label="Imagery needed"><div class="lbl">Imagery needed</div>
+                <div class="opts"><label><input type="checkbox" value="Standard photos and video"> Standard photos and video</label><label><input type="checkbox" value="Zoom close-ups"> Zoom close-ups</label><label><input type="checkbox" value="Thermal"> Thermal</label><label><input type="checkbox" value="Not sure"> Not sure</label></div></div>
+              <div class="field" data-label="How often"><label>How often</label><select class="freq"></select></div>
+            </section>
+        
+            <section class="form-card form-sec" hidden data-type="Media" data-title="Media">
+              <h3>Media</h3>
+              <div class="field" data-label="Content"><div class="lbl">What do you need?</div>
+                <div class="opts"><label><input type="checkbox" value="Stills"> Stills</label><label><input type="checkbox" value="Video"> Video</label></div></div>
+              <div class="field" data-label="Intended use"><div class="lbl">What will it be used for?</div>
+                <div class="opts"><label><input type="checkbox" value="Marketing"> Marketing</label><label><input type="checkbox" value="Construction progress"> Construction progress</label><label><input type="checkbox" value="Social media"> Social media</label><label><input type="checkbox" value="Other"> Other</label></div>
+                <input type="text" placeholder="Other, or more detail" class="more"></div>
+              <div class="field" data-label="How often"><label>How often</label><select class="freq"></select></div>
+            </section>
+        
+            <section class="form-card form-sec" hidden data-type="Topography" data-title="Topography">
+              <h3>Topography</h3>
+              <div class="field" data-label="Typical site size (ha)"><label>Typical site size (hectares)</label><input type="number" min="0" step="0.1"><div class="hint">1 hectare is 10,000 m², roughly a football pitch and a half.</div></div>
+              <div class="field" data-label="Accuracy needed"><label>Accuracy needed</label>
+                <select><option value=""></option><option>Not sure</option><option>Better than 2 to 3 cm</option><option>About 5 cm</option><option>About 10 cm</option><option>Visual only, no survey accuracy</option></select></div>
+              <div class="field" data-label="Outputs"><div class="lbl">Outputs</div>
+                <div class="opts"><label><input type="checkbox" value="Orthomosaic"> Orthomosaic</label><label><input type="checkbox" value="Surface or terrain model (DSM/DTM)"> Surface or terrain model (DSM/DTM)</label><label><input type="checkbox" value="Contours"> Contours</label><label><input type="checkbox" value="CAD drawing"> CAD drawing</label><label><input type="checkbox" value="Point cloud"> Point cloud</label><label><input type="checkbox" value="Volumes"> Volumes</label><label><input type="checkbox" value="Not sure"> Not sure</label></div></div>
+              <div class="field" data-label="How often"><label>How often</label><select class="freq"></select></div>
+            </section>
+        
+            <section class="form-card form-sec" hidden data-type="Multispectral" data-title="Multispectral">
+              <h3>Multispectral</h3>
+              <div class="field" data-label="Crop or habitat"><label>Crop or habitat type</label><input type="text" placeholder="e.g. arable, grassland, moorland, woodland"></div>
+              <div class="field" data-label="Typical area (ha)"><label>Typical area (hectares)</label><input type="number" min="0" step="0.1"></div>
+              <div class="field" data-label="Outputs"><div class="lbl">Outputs</div>
+                <div class="opts"><label><input type="checkbox" value="NDVI"> NDVI</label><label><input type="checkbox" value="Other vegetation indices"> Other vegetation indices</label><label><input type="checkbox" value="Plant health maps"> Plant health maps</label><label><input type="checkbox" value="Not sure"> Not sure</label></div></div>
+              <div class="field" data-label="How often"><label>How often</label><select class="freq"></select></div>
+            </section>
+        
+            <section class="form-card form-sec" hidden data-type="3D Modelling" data-title="3D Modelling">
+              <h3>3D Modelling</h3>
+              <div class="field" data-label="Subject"><div class="lbl">What will you model?</div>
+                <div class="opts"><label><input type="checkbox" value="Building"> Building</label><label><input type="checkbox" value="Site"> Site</label><label><input type="checkbox" value="Structure"> Structure</label><label><input type="checkbox" value="Other"> Other</label></div>
+                <input type="text" placeholder="Other, or more detail" class="more"></div>
+              <div class="field" data-label="Capture method"><label>Capture method</label>
+                <select><option value=""></option><option>Not sure</option><option>Photogrammetry</option><option>LiDAR</option></select></div>
+              <div class="field" data-label="Outputs"><div class="lbl">Outputs</div>
+                <div class="opts"><label><input type="checkbox" value="Textured mesh"> Textured mesh</label><label><input type="checkbox" value="Point cloud"> Point cloud</label><label><input type="checkbox" value="BIM-ready model"> BIM-ready model</label><label><input type="checkbox" value="Not sure"> Not sure</label></div></div>
+              <div class="field" data-label="How often"><label>How often</label><select class="freq"></select></div>
+            </section>
+        
+            <!-- Location -->
+            <section class="form-card form-sec">
+              <h2>Location <span class="req" aria-hidden="true">*</span></h2>
+              <label class="check"><input type="checkbox" id="roving"> <span>Roving: the work will be at many different locations across the UK</span></label>
+        
+              <div id="regionsWrap" class="field" hidden><div class="lbl">Which regions?</div>
+                <div class="opts" id="regions">
+                  <label><input type="checkbox" value="UK wide"> UK wide</label>
+                  <label><input type="checkbox" value="North East"> North East</label><label><input type="checkbox" value="North West"> North West</label>
+                  <label><input type="checkbox" value="Yorkshire and the Humber"> Yorkshire and the Humber</label><label><input type="checkbox" value="East Midlands"> East Midlands</label>
+                  <label><input type="checkbox" value="West Midlands"> West Midlands</label><label><input type="checkbox" value="East of England"> East of England</label>
+                  <label><input type="checkbox" value="London"> London</label><label><input type="checkbox" value="South East"> South East</label><label><input type="checkbox" value="South West"> South West</label>
+                  <label><input type="checkbox" value="Wales"> Wales</label><label><input type="checkbox" value="Scotland"> Scotland</label><label><input type="checkbox" value="Northern Ireland"> Northern Ireland</label>
+                </div></div>
+        
+              <div id="siteWrap">
+                <div class="search">
+                  <input type="text" id="pcSearch" placeholder="Search a postcode to move the map">
+                  <button type="button" id="pcBtn">Find</button>
+                </div>
+                <div class="form-msg form-msg--err" id="pcMsg"></div>
+                <div id="map"></div>
+                <div class="hint">Use the shape tools on the left of the map to draw around the area(s) you want flown. You can draw more than one, and edit or delete them.</div>
+                <div class="area-info" id="areaInfo"></div>
+                <div class="pair">
+                  <div class="field"><label for="town">Nearest town</label><input type="text" id="town"></div>
+                  <div class="field"><label for="postcode">Site postcode</label><input type="text" id="postcode" maxlength="8" autocapitalize="characters" placeholder="e.g. DN31 1AA"></div>
+                </div>
+              </div>
+            </section>
+        
+            <!-- Current position -->
+            <section class="form-card form-sec" data-title="Current Position">
+              <h2>Your current position</h2>
+              <div class="field" data-label="Existing drones or software"><label>Drones or software you already have (if any)</label><textarea placeholder="e.g. DJI Mavic 3 Enterprise, Pix4D"></textarea></div>
+              <div class="field" data-label="Pilot qualifications held"><div class="lbl">Pilot qualifications held in your team</div>
+                <div class="opts"><label><input type="checkbox" value="None"> None</label><label><input type="checkbox" value="Flyer ID"> Flyer ID</label><label><input type="checkbox" value="A2 CofC"> A2 CofC</label><label><input type="checkbox" value="GVC"> GVC</label><label><input type="checkbox" value="Other"> Other</label></div>
+                <input type="text" placeholder="Other, or how many pilots" class="more"></div>
+              <div class="pair">
+                <div class="field" data-label="Operational Authorisation held"><label>CAA Operational Authorisation held?</label>
+                  <select><option value=""></option><option>Yes</option><option>No</option><option>Not sure</option></select></div>
+                <div class="field" data-label="Preferred route"><label>Preferred route</label>
+                  <select><option value=""></option><option>Build an in house team</option><option>Contract the work out</option><option>Undecided</option></select></div>
+              </div>
+            </section>
+        
+            <!-- Timescales and budget -->
+            <section class="form-card form-sec" data-title="Timescales and Budget">
+              <h2>Timescales and budget</h2>
+              <div class="field" data-label="Operational by"><label>When do you want to be operational?</label>
+                <select><option value=""></option><option>Within 3 months</option><option>3 to 6 months</option><option>6 to 12 months</option><option>Over 12 months</option><option>Not sure</option></select></div>
+              <div class="field" data-label="Budget"><label>Budget</label><textarea placeholder="An approximate figure or range, and whether it covers equipment, training, compliance or contracted work"></textarea></div>
+              <div class="field" data-label="Anything else"><label>Anything else I should know</label><textarea></textarea></div>
+            </section>
+        
+        
+            <section class="form-card form-sec">
+              <label class="check"><input type="checkbox" id="consent"> <span>I agree to Allingford Drone Services storing these details to prepare a proposal and contact me about it. <span class="req" aria-hidden="true">*</span></span></label>
+
+            <div class="trap" aria-hidden="true">
+              <label for="hp">Leave this box empty</label>
+              <input type="text" id="hp" name="fax_number" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="form-send">
+              <div id="turnstile" class="turnstile" tabindex="-1"></div>
+              <button type="button" class="button button--slate" id="sendBtn">Send</button>
+              <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            </div>
+              <p class="form-note">See the <a href="../../../privacy.html">privacy notice</a> for how your details are used. Map data &copy; OpenStreetMap contributors.</p>
+            </section>
+            </form>
+          </div>
+          <div id="doneWrap" class="form-card form-done" hidden tabindex="-1">
+            <h2>Thank you</h2>
+            <p id="doneRefLine">Your reference is <strong id="doneRef"></strong>.</p>
+            <p>Your requirements have been sent. I'll review your answers and come back to you with a proposal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ash enquire" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="pill-heading" id="contact-title">Contact</h2>
+        <p>Have a project in mind or a question about what drones could do for you? Send me a message and I'll get back to you.</p>
+        <div class="enquire-actions">
+          <a class="button" href="../../../contact/">Contact me</a>
+          <a class="button button--outline" href="mailto:ewan@allingforddroneservices.co.uk">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p><a href="mailto:ewan@allingforddroneservices.co.uk">ewan@allingforddroneservices.co.uk</a></p>
+      <p>Based in Grimsby, working nationwide</p>
+      <p><a href="../../../privacy.html">Privacy notice</a></p>
+      <p>Allingford Drone Services is a trading name of Ewan Allen-Cottingham</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+  <script>
+  (function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var map = null, drawn = null;
+  var FREQ = ['', 'One off', 'Weekly', 'Monthly', 'Quarterly', 'Twice a year', 'Annually', 'As and when needed'];
+  var map = null, drawn = null;
+
+  /* ---------- Frequency dropdowns ---------- */
+  document.querySelectorAll('select.freq').forEach(function (sel) {
+    FREQ.forEach(function (v) { var o = document.createElement('option'); o.value = o.textContent = v; sel.appendChild(o); });
+  });
+
+  /* ---------- Mission type sections ---------- */
+  $('types').addEventListener('change', function () {
+    var on = checkedValues($('types'));
+    document.querySelectorAll('.form-sec[data-type]').forEach(function (sec) {
+      sec.hidden = on.indexOf(sec.getAttribute('data-type')) < 0;
+    });
+  });
+
+  /* ---------- Location ---------- */
+  $('roving').addEventListener('change', function () {
+    var r = this.checked;
+    $('regionsWrap').hidden = !r;
+    $('siteWrap').hidden = r;
+    if (!r && map) setTimeout(function () { map.invalidateSize(); }, 50);
+  });
+
+  function initMap() {
+    if (typeof L === 'undefined') {
+      $('map').innerHTML = '<p style="padding:12px">The map could not load. Please give the nearest town and postcode below instead.</p>';
+      return;
+    }
+    map = L.map('map').setView([54.3, -2.5], 6);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      referrerPolicy: 'strict-origin-when-cross-origin',   // OpenStreetMap blocks tile requests that arrive without a Referer
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    drawn = new L.FeatureGroup().addTo(map);
+    if (L.Control.Draw) {
+      map.addControl(new L.Control.Draw({
+        draw: {
+          polygon: { allowIntersection: false, showArea: false, shapeOptions: { color: '#2E3B4E' } },
+          rectangle: { showArea: false, shapeOptions: { color: '#2E3B4E' } },
+          polyline: false, circle: false, marker: false, circlemarker: false
+        },
+        edit: { featureGroup: drawn }
+      }));
+      map.on(L.Draw.Event.CREATED, function (e) { drawn.addLayer(e.layer); updateArea(); });
+      map.on(L.Draw.Event.EDITED, updateArea);
+      map.on(L.Draw.Event.DELETED, updateArea);
+    }
+  }
+
+  function updateArea() {
+    var gj = drawn ? drawn.toGeoJSON() : { features: [] };
+    var total = 0;
+    gj.features.forEach(function (f) { if (f.geometry.type === 'Polygon') total += ringArea(f.geometry.coordinates[0]); });
+    var n = gj.features.length;
+    $('areaInfo').textContent = n ? n + ' area' + (n > 1 ? 's' : '') + ' drawn, about ' + (total / 10000).toFixed(2) + ' ha in total' : '';
+  }
+
+  function ringArea(ring) {
+    var R = 6378137, rad = Math.PI / 180, s = 0;
+    for (var i = 0; i < ring.length - 1; i++) {
+      s += (ring[i + 1][0] - ring[i][0]) * rad * (2 + Math.sin(ring[i][1] * rad) + Math.sin(ring[i + 1][1] * rad));
+    }
+    return Math.abs(s * R * R / 2);
+  }
+
+  /* Postcode search (postcodes.io, free, no key). Falls back to the outward code, e.g. "DN31". */
+  $('pcBtn').addEventListener('click', findPostcode);
+  $('pcSearch').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); findPostcode(); } });
+
+  function findPostcode() {
+    var q = $('pcSearch').value.trim();
+    if (!q || !map) return;
+    $('pcMsg').textContent = '';
+    var full = 'https://api.postcodes.io/postcodes/' + encodeURIComponent(q);
+    var part = 'https://api.postcodes.io/outcodes/' + encodeURIComponent(q.replace(/\s+/g, ''));
+    getJson(full).catch(function () { return getJson(part); }).then(function (d) {
+      var r = d.result;
+      map.setView([r.latitude, r.longitude], r.postcode ? 16 : 13);
+      if (r.postcode && !$('postcode').value) $('postcode').value = r.postcode;
+      var town = r.admin_district;
+      if (Array.isArray(town)) town = town[0];
+      if (town && !$('town').value) $('town').value = town;
+    }).catch(function () { $('pcMsg').textContent = 'Postcode not found. Try another, or move the map by hand.'; });
+  }
+
+  function getJson(url) {
+    return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+
+  /* ---------- Collect answers ---------- */
+  function checkedValues(el) {
+    return Array.prototype.map.call(el.querySelectorAll('input[type=checkbox]:checked'), function (c) { return c.value; });
+  }
+
+  function valueOf(q) {
+    var vals = checkedValues(q);
+    q.querySelectorAll('input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea').forEach(function (el) {
+      if (el.id === 'hp') return;
+      var v = el.value.trim();
+      if (v) vals.push(v);
+    });
+    return vals.join(', ');
+  }
+
+  function collectAnswers() {
+    var out = [];
+    document.querySelectorAll('.form-sec[data-title]').forEach(function (sec) {
+      if (sec.hidden) return;
+      var items = [];
+      sec.querySelectorAll('.field[data-label]').forEach(function (q) {
+        var v = valueOf(q);
+        if (v) items.push({ label: q.getAttribute('data-label'), value: v });
+      });
+      if (items.length) out.push({ title: sec.getAttribute('data-title'), items: items });
+    });
+    return out;
+  }
+
+  /* ---------- Input limits ---------- */
+  var PHONE_CHARS = /[^0-9+()\- ]/g;
+  var POSTCODE_RE = /^[A-Z]{1,2}[0-9][A-Z0-9]? ?[0-9][A-Z]{2}$/;
+
+  // Telephone: digits, spaces, + ( ) - only
+  $('telephone').addEventListener('input', function () {
+    var v = this.value.replace(PHONE_CHARS, '');
+    if (v !== this.value) this.value = v;
+  });
+  // Postcodes: letters, digits and one space, upper case
+  ['postcode', 'pcSearch'].forEach(function (id) {
+    $(id).addEventListener('input', function () {
+      var v = this.value.toUpperCase().replace(/[^A-Z0-9 ]/g, '').replace(/ {2,}/g, ' ');
+      if (v !== this.value) this.value = v;
+    });
+  });
+
+  function phoneOk(v) {
+    v = v.trim();
+    if (!v) return true;                       // optional
+    var digits = v.replace(/\D/g, '').length;
+    return !/[^0-9+()\- ]/.test(v) && digits >= 10 && digits <= 15;
+  }
+  function postcodeOk(v) {
+    v = v.trim().toUpperCase();
+    return !v || POSTCODE_RE.test(v);          // optional
+  }
+
+
+  window.ADS_FORM = {
+    type: 'requirements',
+    container: 'formWrap',
+    validate: function () {
+      var fail = window.ADS_FORM_FAIL, h = window.ADS_FORM_HELPERS;
+      var types = checkedValues($('types'));
+      var roving = $('roving').checked;
+      var gj = drawn ? drawn.toGeoJSON() : { features: [] };
+      if (!$('company').value.trim()) return fail('Please enter your company name.', 'company');
+      if (!$('contact').value.trim()) return fail('Please enter your name.', 'contact');
+      if (!h.emailOk($('email').value)) return fail('Please enter a valid email address.', 'email');
+      if (!h.phoneOk($('telephone').value, false)) return fail('Please enter a valid telephone number (10 to 15 digits).', 'telephone');
+      if (!types.length) return fail('Please choose at least one mission type.', 'types');
+      if (!roving && !gj.features.length && !$('town').value.trim() && !$('postcode').value.trim()) {
+        return fail('Please mark the area on the map, give a town or postcode, or tick roving.', 'map');
+      }
+      if (!roving && !postcodeOk($('postcode').value)) return fail('Please enter a valid UK postcode, e.g. DN31 1AA, or leave it blank.', 'postcode');
+      if (roving && !checkedValues($('regions')).length) return fail('Please choose at least one region.', 'regions');
+      if (!$('consent').checked) return fail('Please tick the box to confirm I can store your details.', 'consent');
+      return true;
+    },
+    collect: function () {
+      var roving = $('roving').checked;
+      var gj = drawn ? drawn.toGeoJSON() : { type: 'FeatureCollection', features: [] };
+      return {
+        company: $('company').value, contact: $('contact').value, role: $('role').value,
+        email: $('email').value, telephone: $('telephone').value, sector: $('sector').value,
+        website: $('website').value, address: $('address').value,
+        missionTypes: checkedValues($('types')),
+        location: {
+          roving: roving,
+          regions: checkedValues($('regions')).join(', '),
+          town: $('town').value, postcode: $('postcode').value,
+          geojson: roving ? '' : JSON.stringify(gj)
+        },
+        answers: collectAnswers(),
+        consent: $('consent').checked,
+        hp: $('hp').value
+      };
+    }
+  };
+  initMap();
+  })();
+  </script>
+  <script src="../../../assets/js/forms.js"></script>
+</body>
+</html>
