@@ -134,7 +134,7 @@ Drone data turned into outputs you can work with.
 - Multispectral and GIS analysis
 
 **Photo description:**
-Top down view of a drone over water and woodland
+DTM of mountain landscape
 
 ### Card 4
 
