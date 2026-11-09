@@ -36,8 +36,8 @@ Drone consultancy, piloting and data processing for organisations across the UK.
 **Button:**
 Start an enquiry
 
-**Navigation buttons:**
-- About
+**Navigation buttons** (with a small logo on the left that goes to the home page):
+- About (goes to the About page)
 - Services
 - Enquire
 
@@ -49,30 +49,32 @@ Start an enquiry
 
 ---
 
-## About
+## What I Offer
 
 **Heading:**
-About
+What I Offer
 
-**Headshot description:**
-Ewan Allen-Cottingham
+**Text:**
+Allingford Drone Services gives organisations across the UK direct access to an experienced remote pilot and aerospace engineer. I help you set up and run a compliant drone operation, fly survey, inspection and media work for you, and process the data into outputs your team can use.
 
-**Opening line** (larger text):
-I'm Ewan Allen-Cottingham, a drone pilot and aerospace engineer with over five years in the UAV industry.
+**Button** (goes to the About page):
+More about me
 
-**Paragraph 2:**
-I started as a pilot and technician at Vantage UAV, then flew AR3 and AR5 fixed wing aircraft beyond visual line of sight for TEKEVER, where I became Remote Pilot in Command and Mission Commander, leading flight crews and training new operators. As Technical Manager at Survey Air I ran CAA compliance, the operations manual and fleet maintenance, and flew LiDAR, photogrammetry, multispectral and inspection work.
+---
 
-**Paragraph 3:**
-Allingford Drone Services is how I offer that experience directly: helping you set up and run a drone operation, flying for you, and turning the data into something you can use.
+## My Network
 
-**Credentials** (three items along the bottom, bold title then small text):
-1. **Title:** BEng (Hons)
-   **Text:** Aerospace Engineering, University of the West of England
-2. **Title:** 100+ BVLOS hours
-   **Text:** Fixed wing operations with TEKEVER
-3. **Title:** GVC and A2 CofC
-   **Text:** UK remote pilot certificates
+Also shown at the bottom of the About page.
+
+**Heading:**
+My Network
+
+**Logos** (in date order, each opens the company's website in a new tab):
+1. Vantage UAV, https://vantage-uav.co.uk
+2. TEKEVER, https://tekever.com
+3. Survey Air, https://surveyair.co.uk
+
+> Note: The Vantage UAV logo has been recoloured from white to navy (#002060) so it shows on a light background. Replace with an official dark version if one is supplied.
 
 ---
 
@@ -174,6 +176,48 @@ Tell me about your project. The enquiry form takes about five minutes and lets y
 - Based in Grimsby, working nationwide
 - Privacy notice (link)
 - Allingford Drone Services is a trading name of Ewan Allen-Cottingham
+
+---
+
+## About page
+Web address: allingforddroneservices.co.uk/about/
+
+**Browser tab title:**
+About | Allingford Drone Services
+
+**Search result description:**
+Ewan Allen-Cottingham, drone pilot and aerospace engineer with over five years in the UAV industry. Allingford Drone Services, based in Grimsby, working nationwide.
+
+**Hero photo description:**
+A drone flying over farmland with wind turbines in the distance
+
+
+**Heading:**
+About
+
+**Headshot description:**
+Ewan Allen-Cottingham
+
+**Opening line** (larger text):
+I'm Ewan Allen-Cottingham, a drone pilot and aerospace engineer with over five years in the UAV industry.
+
+**Paragraph 2:**
+I started as a pilot and technician at Vantage UAV, then flew AR3 and AR5 fixed wing aircraft beyond visual line of sight for TEKEVER, where I became Remote Pilot in Command and Mission Commander, leading flight crews and training new operators. As Technical Manager at Survey Air I ran CAA compliance, the operations manual and fleet maintenance, and flew LiDAR, photogrammetry, multispectral and inspection work.
+
+**Paragraph 3:**
+Allingford Drone Services is how I offer that experience directly: helping you set up and run a drone operation, flying for you, and turning the data into something you can use.
+
+**Credentials** (three items along the bottom, bold title then small text):
+1. **Title:** BEng (Hons)
+   **Text:** Aerospace Engineering, University of the West of England
+2. **Title:** 100+ BVLOS hours
+   **Text:** Fixed wing operations with TEKEVER
+3. **Title:** GVC and A2 CofC
+   **Text:** UK remote pilot certificates
+
+---
+
+After the About text the page shows the My Network logos (see above), then the Enquire section.
 
 ---
 

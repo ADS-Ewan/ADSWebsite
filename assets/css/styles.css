@@ -114,6 +114,12 @@ a { color: inherit; }
   border-top: 1px solid rgba(122, 139, 163, .45);
   border-bottom: 1px solid rgba(122, 139, 163, .45);
 }
+/* Small logo mark on the left of the nav, links to the home page */
+.nav-home {
+  position: absolute; left: max(16px, (100% - var(--wrap)) / 2); top: 50%; transform: translateY(-50%);
+  display: block; line-height: 0; border-radius: 8px;
+}
+.nav-home img { width: 72px; height: auto; }
 .nav-list {
   list-style: none; margin: 0; padding: 0;
   display: flex; justify-content: center; gap: 120px;
@@ -175,6 +181,31 @@ a { color: inherit; }
   font-size: var(--step-3); font-weight: 600; line-height: 1.2; text-align: center;
 }
 
+/* White sections: What I Offer, and My Network on the About page */
+.section--white { background: var(--white); color: var(--ink); }
+.section--white :focus-visible { outline-color: var(--slate); }
+.button--slate { background: var(--slate); color: var(--ash); border-color: var(--slate); }
+.button--slate:hover { background: var(--slate-deep); border-color: var(--slate-deep); color: var(--white); }
+
+/* What I Offer */
+.offer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 56px; align-items: start; }
+.offer-title { margin: 0; font-size: var(--step-3); font-weight: 700; line-height: 1.2; color: var(--ink); }
+.offer-text { border-left: 6px solid var(--slate); padding-left: 32px; }
+.offer-text p { margin: 0 0 24px; max-width: 60ch; font-size: var(--step-1); line-height: 1.55; font-weight: 500; }
+
+/* My Network: logo row. Static for now; becomes a moving carousel once there are more logos. */
+.network-section--white { background: var(--white); color: var(--ink); }
+.network-section--white :focus-visible { outline-color: var(--slate); }
+.network {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px 72px;
+}
+.network a { display: block; padding: 8px; border-radius: 8px; transition: transform .15s ease; }
+.network a:hover { transform: scale(1.04); }
+.network img { height: 64px; width: auto; max-width: 260px; object-fit: contain; }
+.network li:nth-child(1) img { height: 46px; } /* Vantage UAV: wide logo, sized to match the others visually */
+.network li:nth-child(2) img { height: 34px; } /* TEKEVER: wordmark only */
+
 /* About */
 .about { display: grid; grid-template-columns: 280px 1fr; gap: 56px; align-items: start; }
 .headshot {
@@ -206,6 +237,7 @@ a { color: inherit; }
   transition-delay: calc(var(--start, 0s) + var(--i, 0) * var(--step, .3s));
 }
 #about { --start: 0s; --step: .44s; }
+#offer, #network { --start: 0s; --step: .4s; }
 #services { --start: 1s; --step: .3s; }
 
 /* Services: the slate panel sweeps in from the left before the cards appear */
@@ -294,8 +326,15 @@ a { color: inherit; }
 @media (max-width: 760px) {
   .hero img { object-position: 82% 0%; }
   .hero--service img { object-position: center; }
-  .nav-list { gap: 10px; }
-  .nav-link { padding: 5px 16px; font-size: var(--step--1); }
+  .nav-list { gap: 8px; justify-content: flex-end; padding-right: 12px; padding-left: 80px; }
+  .nav-home img { width: 56px; height: auto; }
+  .offer { grid-template-columns: 1fr; gap: 20px; }
+  .offer-text { padding-left: 20px; }
+  .network { gap: 28px 40px; }
+  .network img { height: 52px; }
+  .network li:nth-child(1) img { height: 36px; }
+  .network li:nth-child(2) img { height: 26px; }
+  .nav-link { padding: 5px 14px; font-size: var(--step--1); }
   .brand-band { padding: 28px 0 12px; }
   .section { padding: 56px 0; }
   .pill-heading { padding: 10px 28px; min-width: 0; margin-bottom: 36px; }
