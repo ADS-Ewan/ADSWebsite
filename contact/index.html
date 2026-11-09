@@ -70,7 +70,7 @@
               </fieldset>
               <div class="pair">
                 <div class="field"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="email" autocomplete="email" maxlength="200" required></div>
-                <div class="field"><label for="telephone">Phone <span class="req" aria-hidden="true">*</span></label><input type="tel" id="telephone" autocomplete="tel" inputmode="tel" maxlength="20" required></div>
+                <div class="field"><label for="telephone">Phone</label><input type="tel" id="telephone" autocomplete="tel" inputmode="tel" maxlength="20"></div>
               </div>
               <div class="field"><label for="company">Company name, if applicable</label><input type="text" id="company" autocomplete="organization" maxlength="150"></div>
               <div class="field"><label for="message">How can I help? <span class="req" aria-hidden="true">*</span></label><textarea id="message" rows="6" maxlength="3000" required></textarea></div>
@@ -117,7 +117,7 @@
           if (!$('firstName').value.trim()) return fail('Please enter your first name.', 'firstName');
           if (!$('lastName').value.trim()) return fail('Please enter your last name.', 'lastName');
           if (!h.emailOk($('email').value)) return fail('Please enter a valid email address.', 'email');
-          if (!h.phoneOk($('telephone').value, true)) return fail('Please enter a valid phone number (10 to 15 digits).', 'telephone');
+          if (!h.phoneOk($('telephone').value, false)) return fail('Please enter a valid phone number (10 to 15 digits).', 'telephone');
           if (!$('message').value.trim()) return fail('Please tell me how I can help.', 'message');
           if (!$('consent').checked) return fail('Please tick the box to confirm I can store your details and contact you.', 'consent');
           return true;

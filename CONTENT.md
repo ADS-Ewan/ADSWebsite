@@ -347,7 +347,7 @@ Send me a message about your project or question and I'll get back to you. If yo
 **Form fields** (* = required):
 - Name * (First name, Last name)
 - Email *
-- Phone *
+- Phone
 - Company name, if applicable
 - How can I help? *
 - Consent tick box *: I consent to Allingford Drone Services storing my details and contacting me about this enquiry.
