@@ -33,13 +33,10 @@ A drone flying over a city at dusk, with a motorway lit up below
 **Tagline** (under the logo):
 Drone consultancy, piloting and data processing for organisations across the UK.
 
-**Button:**
-Start an enquiry
-
 **Navigation buttons** (with a small logo on the left that goes to the home page):
 - About (goes to the About page)
 - Services
-- Enquire
+- Contact (goes to the Contact page)
 
 **Services dropdown** (desktop only, appears when hovering over Services):
 - Consultancy
@@ -156,16 +153,16 @@ A hand launching a small drone at sunset
 
 ---
 
-## Enquire
+## Contact section (bottom of every page except the Contact page)
 
 **Heading:**
-Enquire
+Contact
 
 **Text:**
-Tell me about your project. The enquiry form takes about five minutes and lets you choose the services you need. I'll reply with the next steps.
+Have a project in mind or a question about what drones could do for you? Send me a message and I'll get back to you.
 
 **Buttons:**
-- Start an enquiry
+- Contact me (goes to the Contact page)
 - Email me
 
 ---
@@ -217,13 +214,13 @@ Allingford Drone Services is how I offer that experience directly: helping you s
 
 ---
 
-After the About text the page shows the My Network logos (see above), then the Enquire section.
+After the About text the page shows the My Network logos (see above), then the Contact section.
 
 ---
 
 ## Service pages
 
-Each page currently reuses its card's text as a placeholder. The logo band, tagline, navigation, Enquire section and footer are shared with the home page, so edit those in the sections above.
+Each page currently reuses its card's text as a placeholder. The logo band, tagline, navigation, Contact section and footer are shared with the home page, so edit those in the sections above.
 
 The **hero photo** on each page is the same photo as its card, and uses the same photo description.
 
@@ -248,6 +245,11 @@ Setting up or improving your own drone operation.
 - Maintenance schedules
 - SORA risk assessments
 - Advice for agronomists adopting drones
+
+**Requirements form box** (below the bullets):
+- **Heading:** Planning a drone operation?
+- **Text:** Fill in the drone requirements form and I'll prepare a proposal with recommended next steps and costs. It takes about five minutes.
+- **Button:** Fill in the requirements form
 
 **Further content:**
 > Note: add paragraphs, examples or anything else for this page here.
@@ -325,6 +327,69 @@ Imagery for your marketing, and help putting it to use.
 
 ---
 
+## Contact page
+Web address: allingforddroneservices.co.uk/contact/
+
+**Browser tab title:**
+Contact | Allingford Drone Services
+
+**Search result description:**
+Get in touch with Allingford Drone Services about drone consultancy, piloting, data processing or aerial media. Based in Grimsby, working nationwide.
+
+**Hero photo:** same as the home page.
+
+**Heading:**
+Contact me
+
+**Intro:**
+Send me a message about your project or question and I'll get back to you. If you're planning a drone operation of your own, the drone requirements form (link) lets you give me the full picture.
+
+**Form fields** (* = required):
+- Name * (First name, Last name)
+- Email *
+- Phone *
+- Company name, if applicable
+- How can I help? *
+- Consent tick box *: I consent to Allingford Drone Services storing my details and contacting me about this enquiry.
+
+**Button:**
+Send
+
+**Note under the form:**
+Fields marked * are required. See the privacy notice (link) for how your details are used.
+
+**Thank you message** (replaces the form once sent):
+Thank you. Your reference is ENQ-xxxx. Your message has been sent. I'll get back to you as soon as I can.
+
+---
+
+## Drone requirements page
+Web address: allingforddroneservices.co.uk/services/consultancy/requirements/
+
+> Note: the questions on this page match the Apps Script requirements form. If you change a question here, tell Claude so the Apps Script version can be kept in step.
+
+**Browser tab title:**
+Drone Requirements | Allingford Drone Services
+
+**Search result description:**
+Tell Allingford Drone Services about the drone work you want to carry out, and get a proposal with recommended next steps and costs.
+
+**Hero photo:** same as the Consultancy page.
+
+**Heading:**
+Drone Requirements
+
+**Intro:**
+Tell me about the drone work you want to carry out. I'll use your answers to prepare a proposal with recommended next steps and costs. It takes about five minutes.
+
+**Consent tick box:**
+I agree to Allingford Drone Services storing these details to prepare a proposal and contact me about it.
+
+**Thank you message:**
+Thank you. Your reference is ENQ-xxxx. Your requirements have been sent. I'll review your answers and come back to you with a proposal.
+
+---
+
 ## Privacy notice page
 
 **Title:**
@@ -337,7 +402,11 @@ Last updated: November 2026
 Allingford Drone Services is a trading name of Ewan Allen-Cottingham, a sole trader. I am responsible for the personal information described here. You can contact me at ewan@allingforddroneservices.co.uk.
 
 **What I collect:**
-When you send an enquiry, through the enquiry form or by email, I collect the details you give me. This is usually your name, organisation, email address, phone number and information about your project.
+When you send an enquiry, through the contact form, the drone requirements form or by email, I collect the details you give me. This is usually your name, organisation, email address, phone number and information about your project.
+
+Both forms use Cloudflare Turnstile to check that submissions come from a real person. To do this Cloudflare processes technical information about your browser and connection, as described in the Turnstile Privacy Addendum (link).
+
+The drone requirements form shows a map from OpenStreetMap and can look up postcodes using postcodes.io. Your browser contacts these services when the map loads or when you search for a postcode.
 
 This website does not use cookies or analytics. It is hosted by GitHub Pages, which logs visitors' IP addresses for security purposes.
 

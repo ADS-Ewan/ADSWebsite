@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Allingford Drone Services</title>
+  <meta name="description" content="Get in touch with Allingford Drone Services about drone consultancy, piloting, data processing or aerial media. Based in Grimsby, working nationwide.">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <meta property="og:title" content="Contact | Allingford Drone Services">
+  <meta property="og:description" content="Get in touch with Allingford Drone Services about drone consultancy, piloting, data processing or aerial media. Based in Grimsby, working nationwide.">
+  <meta property="og:image" content="https://allingforddroneservices.co.uk/assets/img/hero-mobile.jpg">
+  <meta property="og:url" content="https://allingforddroneservices.co.uk/contact/">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header site-header--short">
+    <div class="hero hero--service">
+      <picture>
+        <source media="(max-width: 760px)" srcset="../assets/img/hero-mobile.jpg">
+        <img src="../assets/img/hero.jpg" width="2400" height="1600" alt="A drone flying over a city at dusk, with a motorway lit up below">
+      </picture>
+    </div>
+
+    <div class="brand-band">
+      <div class="wrap">
+        <a href="../"><img class="logo" src="../assets/img/logo.jpg" width="1400" height="248" alt="Allingford Drone Services home page"></a>
+        <p class="tagline">Drone consultancy, piloting and data processing for organisations across the UK.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main">
+    <a class="nav-home" href="../"><img src="../assets/img/nav-mark.png" width="312" height="164" alt="Allingford Drone Services home page"></a>
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="../about/">About</a></li>
+      <li class="nav-item nav-item--menu">
+        <a class="nav-link" href="../#services" data-section="services">Services</a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../services/consultancy/">Consultancy</a></li>
+            <li><a href="../services/piloting/">Piloting</a></li>
+            <li><a href="../services/post-processing/">Post Processing</a></li>
+            <li><a href="../services/media-marketing/">Media &amp; Marketing</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link is-current" aria-current="page" href="./">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="section section--ash" aria-labelledby="page-title">
+      <div class="wrap">
+        <h1 class="pill-heading" id="page-title">Contact me</h1>
+        <div class="form-page">
+          <div id="formWrap">
+            <p class="form-intro">Send me a message about your project or question and I'll get back to you. If you're planning a drone operation of your own, the <a href="../services/consultancy/requirements/">drone requirements form</a> lets you give me the full picture.</p>
+            <form class="form-card" id="contactForm" novalidate onsubmit="return false">
+              <fieldset class="field field--pair">
+                <legend>Name <span class="req" aria-hidden="true">*</span></legend>
+                <div class="pair">
+                  <div><input type="text" id="firstName" autocomplete="given-name" maxlength="100" required aria-describedby="firstNameHint"><span class="sub" id="firstNameHint">First name</span></div>
+                  <div><input type="text" id="lastName" autocomplete="family-name" maxlength="100" required aria-describedby="lastNameHint"><span class="sub" id="lastNameHint">Last name</span></div>
+                </div>
+              </fieldset>
+              <div class="pair">
+                <div class="field"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="email" autocomplete="email" maxlength="200" required></div>
+                <div class="field"><label for="telephone">Phone <span class="req" aria-hidden="true">*</span></label><input type="tel" id="telephone" autocomplete="tel" inputmode="tel" maxlength="20" required></div>
+              </div>
+              <div class="field"><label for="company">Company name, if applicable</label><input type="text" id="company" autocomplete="organization" maxlength="150"></div>
+              <div class="field"><label for="message">How can I help? <span class="req" aria-hidden="true">*</span></label><textarea id="message" rows="6" maxlength="3000" required></textarea></div>
+              <label class="check"><input type="checkbox" id="consent" required> <span>I consent to Allingford Drone Services storing my details and contacting me about this enquiry. <span class="req" aria-hidden="true">*</span></span></label>
+
+            <div class="trap" aria-hidden="true">
+              <label for="hp">Leave this box empty</label>
+              <input type="text" id="hp" name="fax_number" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="form-send">
+              <div id="turnstile" class="turnstile" tabindex="-1"></div>
+              <button type="button" class="button button--slate" id="sendBtn">Send</button>
+              <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            </div>
+              <p class="form-note">Fields marked <span class="req">*</span> are required. See the <a href="../privacy.html">privacy notice</a> for how your details are used.</p>
+            </form>
+          </div>
+          <div id="doneWrap" class="form-card form-done" hidden tabindex="-1">
+            <h2>Thank you</h2>
+            <p id="doneRefLine">Your reference is <strong id="doneRef"></strong>.</p>
+            <p>Your message has been sent. I'll get back to you as soon as I can.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p><a href="mailto:ewan@allingforddroneservices.co.uk">ewan@allingforddroneservices.co.uk</a></p>
+      <p>Based in Grimsby, working nationwide</p>
+      <p><a href="../privacy.html">Privacy notice</a></p>
+      <p>Allingford Drone Services is a trading name of Ewan Allen-Cottingham</p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      window.ADS_FORM = {
+        type: 'contact',
+        container: 'formWrap',
+        validate: function () {
+          var h = window.ADS_FORM_HELPERS, fail = window.ADS_FORM_FAIL;
+          if (!$('firstName').value.trim()) return fail('Please enter your first name.', 'firstName');
+          if (!$('lastName').value.trim()) return fail('Please enter your last name.', 'lastName');
+          if (!h.emailOk($('email').value)) return fail('Please enter a valid email address.', 'email');
+          if (!h.phoneOk($('telephone').value, true)) return fail('Please enter a valid phone number (10 to 15 digits).', 'telephone');
+          if (!$('message').value.trim()) return fail('Please tell me how I can help.', 'message');
+          if (!$('consent').checked) return fail('Please tick the box to confirm I can store your details and contact you.', 'consent');
+          return true;
+        },
+        collect: function () {
+          return {
+            firstName: $('firstName').value, lastName: $('lastName').value,
+            email: $('email').value, telephone: $('telephone').value,
+            company: $('company').value, message: $('message').value,
+            consent: $('consent').checked, hp: $('hp').value
+          };
+        }
+      };
+    })();
+  </script>
+  <script src="../assets/js/forms.js"></script>
+  <script>window.ADS_FORM_HELPERS.limitPhone(document.getElementById('telephone'));</script>
+</body>
+</html>
