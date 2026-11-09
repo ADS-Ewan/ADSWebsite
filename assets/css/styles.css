@@ -253,6 +253,13 @@ a { color: inherit; }
 .motion .services-section.is-in::before { transform: none; }
 
 /* Services */
+/* On desktop the cards span the full window, with a 24px margin each side (capped at 1800px on very wide screens) */
+@media (min-width: 1001px) {
+  .wrap--wide { width: min(1800px, 100% - 48px); }
+  .wrap--wide .service-photo { aspect-ratio: 5 / 4; }
+  .wrap--wide .service-body { padding: 0 28px 34px; }
+  .wrap--wide .service h3 { margin-top: 6px; }
+}
 .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .service {
   position: relative;
