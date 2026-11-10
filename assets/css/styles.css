@@ -268,6 +268,30 @@ a { color: inherit; }
   display: flex; flex-direction: column;
 }
 .service-photo { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; }
+/* Desktop hover: the hovered card lifts and grows, the others shrink and dim slightly (no tilt),
+   like flicking through a hand of cards. Uses the separate scale/translate/rotate properties so it
+   doesn't clash with the scroll-in animation, which uses transform. Mouse users on wide screens only,
+   and off for anyone who has reduced motion turned on. */
+@media (hover: hover) and (pointer: fine) and (min-width: 1001px) and (prefers-reduced-motion: no-preference) {
+  .services .service {
+    transform-origin: 50% 100%;
+    transition: scale .35s cubic-bezier(.2, .8, .2, 1.15), translate .35s cubic-bezier(.2, .8, .2, 1.15),
+                rotate .35s cubic-bezier(.2, .8, .2, 1.15), box-shadow .35s ease, filter .35s ease;
+  }
+  .motion [data-animate] .services .service.reveal {
+    transition-property: opacity, transform, scale, translate, rotate, box-shadow, filter;
+    transition-duration: .8s, .8s, .35s, .35s, .35s, .35s, .35s;
+    transition-timing-function: ease, ease, cubic-bezier(.2, .8, .2, 1.15), cubic-bezier(.2, .8, .2, 1.15), cubic-bezier(.2, .8, .2, 1.15), ease, ease;
+  }
+  .motion [data-animate].is-in .services .service.reveal {
+    transition-delay: calc(var(--start, 0s) + var(--i, 0) * var(--step, .3s)), calc(var(--start, 0s) + var(--i, 0) * var(--step, .3s)), 0s, 0s, 0s, 0s, 0s;
+  }
+  .services:has(.service:hover) .service { scale: .95; filter: brightness(.92); }
+  .services:has(.service:hover) .service:hover {
+    scale: 1.1; translate: 0 -14px; rotate: 0deg; z-index: 2; filter: none;
+    box-shadow: 0 26px 50px rgba(15, 22, 32, .45);
+  }
+}
 .service-body { padding: 0 24px 26px; display: flex; flex-direction: column; flex: 1; }
 .service-icon {
   position: relative; margin: -34px 0 12px;
